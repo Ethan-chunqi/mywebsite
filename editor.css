@@ -1,0 +1,160 @@
+.editor-page {
+    background-color: white;
+    min-height: 100vh;
+}
+
+.editor-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.back-link {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.publish-button {
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.publish-button:hover {
+    background-color: #2980b9;
+}
+
+.editor-main {
+    padding-top: 80px;
+}
+
+.editor-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.title-input {
+    width: 100%;
+    font-size: 2rem;
+    padding: 1rem 0;
+    border: none;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.title-input:focus {
+    outline: none;
+}
+
+.tag-input {
+    margin-bottom: 1rem;
+}
+
+.tag-input input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.editor-toolbar {
+    border: 1px solid var(--border-color);
+    border-bottom: none;
+    border-radius: 4px 4px 0 0;
+    padding: 0.5rem;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.editor-toolbar button {
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--border-color);
+    background: white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.editor-toolbar button:hover {
+    background: var(--light-gray);
+}
+
+.content-editor {
+    min-height: 500px;
+    padding: 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 0 0 4px 4px;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.content-editor:focus {
+    outline: none;
+}
+
+.content-editor[placeholder]:empty:before {
+    content: attr(placeholder);
+    color: #999;
+}
+
+.image-upload {
+    display: inline-block;
+}
+
+.image-upload button {
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--border-color);
+    background: white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.image-upload button:hover {
+    background: var(--light-gray);
+}
+
+.image-preview {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.image-preview img {
+    max-width: 200px;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.content-editor img {
+    max-width: 100%;
+    height: auto;
+    margin: 1rem 0;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+} 

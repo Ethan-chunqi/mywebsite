@@ -1,0 +1,107 @@
+<!--
+ * 个人博客首页
+ * 包含以下主要部分：
+ * 1. 导航栏：提供网站主要页面的链接
+ * 2. 个人简介：展示头像和简要介绍
+ * 3. 最新文章：展示最新的三篇博客文章
+ * 4. 精选推荐：展示一篇重点推荐的文章
+ * 5. 关于我：个人详细介绍
+ * 6. 联系方式：社交媒体和联系方式
+-->
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>刘春起 Ethan - 个人博客</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 网站头部导航栏 -->
+    <header>
+        <nav>
+            <div class="nav-container">
+                <div class="logo">刘春起 Ethan</div>
+                <ul>
+                    <li><a href="#home">首页</a></li>
+                    <li><a href="#articles">文章</a></li>
+                    <li><a href="#about">关于我</a></li>
+                    <li><a href="#contact">联系</a></li>
+                    <li><a href="resume.html" class="resume-link">简历</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 主要内容区域 -->
+    <main>
+        <!-- 个人简介区域 -->
+        <section id="home" class="hero">
+            <div class="profile-container">
+                <img src="profile.jpeg" alt="刘春起 Ethan" class="profile-image">
+                <h1>刘春起 Ethan</h1>
+                <p class="subtitle">00 后 · 区块链从业者 · 缠论研究员
+            </div>
+        </section>
+
+        <!-- 文章展示区域 -->
+        <section id="articles" class="articles">
+            <h2>最新文章</h2>
+            <div class="featured-articles" id="featuredArticles">
+                <!-- 最新三篇文章将在这里展示 -->
+            </div>
+            
+            <!-- 文章列表展示位 -->
+            <div class="latest-article-showcase">
+                <h3 class="showcase-title">精选推荐</h3>
+                <a href="" class="showcase-article" id="showcaseArticle">
+                    <div class="showcase-image-wrapper">
+                        <img src="" alt="" class="showcase-image" id="showcaseImage">
+                    </div>
+                    <div class="showcase-content">
+                        <h4 class="showcase-article-title" id="showcaseTitle"></h4>
+                        <p class="showcase-article-excerpt" id="showcaseExcerpt"></p>
+                        <div class="showcase-meta">
+                            <span class="showcase-date" id="showcaseDate"></span>
+                            <div class="showcase-link">阅读全文 →</div>
+                        </div>
+                    </div>
+                </a>
+                <div class="view-more-container">
+                    <a href="articles.html" class="view-more-button">查看更多文章</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 关于我区域 -->
+        <section id="about" class="about">
+            <h2>关于我</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>你好，我是刘春起（Ethan）。这里是我分享思考、见解和经历的空间。</p>
+                    <p>我热衷于探索各种话题，从技术到人文，从生活到哲学。通过写作，我希望能够与更多人分享我的观点和思考。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 联系方式区域 -->
+        <section id="contact" class="contact">
+            <h2>联系我</h2>
+            <div class="contact-content">
+                <p>如果你对我的文章感兴趣，或者想要交流讨论，欢迎通过以下方式联系我：</p>
+                <div class="contact-info">
+                    <a href="mailto:chunqi222@gmail.com" class="contact-link">邮箱</a>
+                    <a href="https://github.com/Ethan-chunqi" class="contact-link" target="_blank">GitHub</a>
+                    <a href="#" class="contact-link">LinkedIn</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 刘春起 Ethan. 保留所有权利。</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

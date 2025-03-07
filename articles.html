@@ -1,0 +1,55 @@
+<!--
+ * 文章列表页面
+ * 展示所有博客文章的列表视图
+ * 1. 网格布局：以卡片形式展示所有文章
+ * 2. 文章预览：每个卡片包含标题、摘要、封面图
+ * 3. 分类标签：显示文章的分类标签
+ * 4. 发布日期：显示文章发布时间
+ * 5. 点击跳转：点击卡片跳转到文章详情
+-->
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文章列表 - 刘春起 Ethan</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="articles-page.css">
+</head>
+<body>
+    <!-- 页面顶部导航栏 -->
+    <header>
+        <nav>
+            <div class="nav-container">
+                <div class="logo">刘春起 Ethan</div>
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="articles.html" class="active">文章</a></li>
+                    <li><a href="resume.html">关于我</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 文章列表主体内容 -->
+    <main class="articles-page">
+        <!-- 页面标题 -->
+        <div class="articles-header">
+            <h1>全部文章</h1>
+        </div>
+
+        <!-- 文章网格容器 -->
+        <div class="articles-container">
+            <!-- 文章卡片将通过JavaScript动态加载到这里 -->
+            <div id="articlesGrid" class="articles-grid"></div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 刘春起 Ethan. 保留所有权利。</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="articles.js"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+{
+  "site": {
+    "title": "刘春起 Ethan的个人网站",
+    "description": "分享技术、投资和生活思考的个人博客",
+    "keywords": ["技术博客", "个人网站", "投资思考", "生活感悟"],
+    "author": "刘春起 Ethan",
+    "language": "zh-CN",
+    "baseUrl": "https://liuchunqi.com"
+  },
+  "seo": {
+    "googleSiteVerification": "",
+    "bingSiteVerification": "",
+    "baiduSiteVerification": "",
+    "robots": "index, follow",
+    "sitemap": true,
+    "analytics": {
+      "google": "",
+      "baidu": ""
+    }
+  },
+  "social": {
+    "github": "",
+    "twitter": "",
+    "weibo": "",
+    "wechat": ""
+  },
+  "deployment": {
+    "provider": "netlify",
+    "buildCommand": "npm run build",
+    "publishDirectory": "dist",
+    "headers": [
+      {
+        "source": "/*",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "public, max-age=31536000"
+          }
+        ]
+      }
+    ]
+  }
+}

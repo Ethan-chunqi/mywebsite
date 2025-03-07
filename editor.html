@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>编辑文章 - 刘春起 Ethan</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <div class="logo">刘春起 Ethan</div>
+                <ul>
+                    <li><a href="index.html">返回首页</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="editor-section">
+            <div class="editor-container">
+                <h1 id="editorTitle">编辑文章</h1>
+                <form id="articleForm" class="article-form">
+                    <div class="form-group">
+                        <label for="title">标题</label>
+                        <input type="text" id="title" name="title" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="coverImage">封面图片</label>
+                        <div class="image-upload-container">
+                            <input type="file" id="coverImage" name="coverImage" accept="image/*" class="image-input">
+                            <div class="image-preview" id="imagePreview">
+                                <img id="previewImg" src="" alt="" style="display: none;">
+                                <div class="upload-placeholder">
+                                    <span>点击或拖拽图片到此处</span>
+                                    <small>支持 jpg、png、gif 格式，最大 5MB</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="tags">标签（用逗号分隔）</label>
+                        <input type="text" id="tags" name="tags">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="excerpt">摘要</label>
+                        <textarea id="excerpt" name="excerpt" rows="3"></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="content">正文内容</label>
+                        <textarea id="content" name="content" rows="15" required></textarea>
+                    </div>
+                    
+                    <div class="form-actions">
+                        <button type="button" onclick="window.history.back()" class="cancel-button">取消</button>
+                        <button type="submit" class="save-button">保存文章</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script src="editor.js"></script>
+</body>
+</html> 

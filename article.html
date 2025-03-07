@@ -1,0 +1,81 @@
+<!--
+ * 文章详情页面
+ * 实现以下功能：
+ * 1. 文章内容展示：标题、日期、作者、正文
+ * 2. 文章导航：上一篇/下一篇文章链接
+ * 3. 分享功能：支持分享到社交媒体
+ * 4. 作者信息：展示作者简介和社交链接
+ * 5. 相关文章推荐：基于标签的相关文章列表
+-->
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文章 - 刘春起 Ethan</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="article.css">
+</head>
+<body class="article-page">
+    <!-- 页面顶部导航 -->
+    <header>
+        <nav>
+            <div class="nav-container">
+                <div class="logo">刘春起 Ethan</div>
+                <ul>
+                    <li><a href="index.html">返回首页</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 主要内容区域 -->
+    <main>
+        <!-- 文章正文部分 -->
+        <article class="article-content">
+            <div class="article-header">
+                <div class="article-meta">
+                    <span class="article-date" id="articleDate"></span>
+                    <span class="article-author">刘春起 Ethan</span>
+                </div>
+                <h1 id="articleTitle"></h1>
+                <div class="article-tags" id="articleTags"></div>
+            </div>
+            <div class="article-body" id="articleBody"></div>
+            <div class="article-footer">
+                <div class="share-buttons">
+                    <button onclick="shareArticle('weibo')">分享到微博</button>
+                    <button onclick="shareArticle('wechat')">分享到微信</button>
+                </div>
+                <div class="article-nav">
+                    <a href="#" class="prev-article" id="prevArticle">上一篇</a>
+                    <a href="#" class="next-article" id="nextArticle">下一篇</a>
+                </div>
+            </div>
+        </article>
+
+        <!-- 侧边栏：作者信息和相关文章 -->
+        <aside class="article-sidebar">
+            <div class="author-card">
+                <img src="profile.jpeg" alt="刘春起 Ethan" class="author-avatar">
+                <h3>刘春起 Ethan</h3>
+                <p class="author-bio">思考者 · 写作者 · 探索者</p>
+                <div class="author-social">
+                    <a href="mailto:chunqi222@gmail.com">邮箱</a>
+                    <a href="https://github.com/Ethan-chunqi" target="_blank">GitHub</a>
+                </div>
+            </div>
+            <div class="related-articles">
+                <h3>相关文章</h3>
+                <div id="relatedArticles" class="related-list"></div>
+            </div>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 刘春起 Ethan. 保留所有权利。</p>
+    </footer>
+
+    <script src="article.js"></script>
+</body>
+</html>

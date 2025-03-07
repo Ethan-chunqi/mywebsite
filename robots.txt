@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /login.html
+Disallow: /editor.html
+
+Sitemap: https://liuchunqi.com/sitemap.xml
